@@ -1,0 +1,14 @@
+{
+  "name": "gleam",
+  "build": {
+    "dockerfile": "Containerfile",
+    "args": {
+      "GLEAM_REL_TAG": "${localEnv:GLEAM_REL_TAG:v1.13.0}"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["Gleam.gleam"]
+    }
+  }
+}
